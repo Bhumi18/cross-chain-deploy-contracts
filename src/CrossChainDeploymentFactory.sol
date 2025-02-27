@@ -5,12 +5,12 @@ import {IL2ToL2CrossDomainMessenger} from "optimism-contracts/interfaces/L2/IL2T
 import {Predeploys} from "optimism-contracts/src/libraries/Predeploys.sol";
 
 /**
- * @title DeploymentFactory
+ * @title CrossChainDeploymentFactory
  * @dev A factory contract for deploying contracts on the current chain and sending cross-chain messages to deploy the contract on other chains.
  * This contract uses the Optimism L2-to-L2 cross-domain messenger for cross-chain communication.
  * @notice
  */
-contract DeploymentFactory {
+contract CrossChainDeploymentFactory {
     // Errors
     error CallerNotL2ToL2CrossDomainMessenger();
     error InvalidCrossDomainSender();
